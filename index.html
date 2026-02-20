@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+</head>
+
+<body>
+    <h1>Dom Event </h1>
+    <!-- option 1 for event handler   -->
+    <button onclick="console.log(5)"">click me</button>
+    <input type=" text">
+        <br>
+
+        <!-- option 2 for event handler  -->
+        <button onclick="makeYellow()">Make yellow</button>
+        <button id="make-read" onclick="makeRead()">Make read</button>
+
+        <br>
+        <button id="btn-blue">Make blue</button>
+        <button id="btn-green">Make Green</button>
+        <br>
+
+        <button id="btn-make-black">Make Black</button>
+        <button id="btn-gold"> Make Gold</button>
+        <script>
+            document.getElementById("btn-make-black").addEventListener('click', function makeBlack() {
+                document.body.style.backgroundColor = "#000"
+            })
+
+            document.getElementById('btn-gold').addEventListener('click', function () {
+                document.body.style.backgroundColor = "gold";
+            })
+
+        </script>
+
+        <script src="./js/event.js"></script>
+</body>
+
+</html>
