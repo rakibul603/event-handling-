@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More events</title>
+</head>
+<body>
+    <button id="btn-mouse">Mouse handler</button>
+    <input id="user-name" type="text" placeholder="Your name">
+    <input id="user-email" type="text" placeholder="Your name">
+    <script>
+        // document.getElementById('btn-mouse').addEventListener('mouseenter', function() {
+        //     console.log('muse triggered')
+        // })
+        // document.getElementById('btn-mouse').addEventListener('mousemove', function() {
+        //     console.log('muse triggered')
+        // })
+        // document.getElementById('btn-mouse').addEventListener('mouseout', function() {
+        //     console.log('muse triggered')
+        // })
+
+
+        // document.getElementById('user-name').addEventListener('focus', function(){
+        //     console.log('user abut to wirght')
+        // })
+        // document.getElementById('user-email').addEventListener('focus', function(){
+        //     console.log('user abut to wirght')
+        // })
+
+        // document.getElementById('user-name').addEventListener('blur', function(){
+        //     console.log('user abut to wirght')
+        // })
+        // document.getElementById('user-email').addEventListener('blur', function(){
+        //     console.log('user abut to wirght')
+        // })
+        document.getElementById('user-name').addEventListener('keydown', function(e){
+            console.log('user abut to wirght', e.target.value)
+        })
+        document.getElementById('user-email').addEventListener('keyup', function(e){
+            console.log('user abut to wirght', e.target.value)
+        })
+    </script>
+</body>
+</html>
